@@ -2,7 +2,7 @@
 
 function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <div className="contactus sections">ContactUs</div>
   )
 }
 

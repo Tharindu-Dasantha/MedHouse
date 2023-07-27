@@ -2,6 +2,7 @@
 
 :root{
     --background-color:#F7FCFF;
+    --heading-color:#00487C;
 }
 body{
     width: 100%;
@@ -15,6 +16,85 @@ body{
     height: 100vh;
 }
 
-.welcome{
+
+
+
+/* welcome section begins here */
+
+.welcome .back-img{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
 
 }
+.welcome .main-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: rgba(0, 255, 255, 0.57); */
+    height: 100vh;
+    margin: 0 auto;
+    
+}
+.welcome .main-container .left-container{
+    height: 70vh;
+    flex: 0.6;
+    padding: 0 20px 0 70px;
+}
+.welcome .main-container .left-container h1 {
+    font-size: 100px;
+    color: var(--heading-color);
+}
+.welcome .main-container .left-container p {
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.welcome .main-container .left-container div button{
+    /* position: absolute; */
+    width: 299px;
+    height: 86px;
+    /* left: 74px;
+    top: 676px; */
+    font-size: 35px;
+    color: white;
+
+    background: linear-gradient(0deg, rgba(0, 31, 63, 0.27), rgba(0, 31, 63, 0.27)), rgba(0, 115, 184, 0.75);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.welcome .main-container .left-container div button:hover{
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.45), 0px 4px 9px rgba(0, 0, 0, 0.45);
+    scale: 1.001;
+}
+
+.welcome .main-container .left-container div a{
+    /* position: absolute; */
+    width: 240px;
+    height: 43px;
+    /* left: 412px;
+    top: 697px; */
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    text-decoration-line: underline;
+
+    color: #0074B8;
+}
+
+
+.welcome .main-container .right-container{
+    height: 70vh;
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    /* height: 10%; */
+    /* background-color: rgba(247, 0, 255, 0.755); */
+}
+
+/* .welcome .main-container .right-container img{
+
+} */

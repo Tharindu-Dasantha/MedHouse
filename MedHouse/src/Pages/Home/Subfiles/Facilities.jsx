@@ -2,7 +2,7 @@
 
 function Facilities() {
   return (
-    <div>Facilities</div>
+    <div className="facilities sections">Facilities</div>
   )
 }
 
