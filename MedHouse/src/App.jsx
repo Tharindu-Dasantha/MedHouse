@@ -1,9 +1,9 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Importing the files
 
-import Home from "./Pages/Home/Home.jsx";
+import Home from "./Pages/Home/Home";
 import TemplatePage from "./Pages/TemplatePage";
 
 function App() {
