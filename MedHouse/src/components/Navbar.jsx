@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom";
+import "./navbar.css";
+import navUserIcon from "../assets/nav_user_icon.svg"
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-            <Link to="/">Home</Link>
-        </li>
-        <li>
-            <Link to="/reservations">RESERVATIONS</Link>
-        </li>
-        <li>
-            <Link to="/services">SERVICES</Link>
-        </li>
-        <li>
-            <Link to="/checkout">CHECKOUT</Link>
-        </li>
-        <li>
-            <Link to="/about">ABOUT US</Link>
-        </li>
-      </ul>
-    </nav>
+    <header className="nav-bar-container">
+      <nav className="nav-bar">
+        <Link className="logo" to="/"><span style={{color:"#FF4500"}}>MED</span><span style={{color:"#00FFFF"}}>HELP</span></Link>
+        <ul>
+          <li>
+              <Link  to="/reservations">RESERVATIONS</Link>
+          </li>
+          <li>
+              <Link to="/services">SERVICES</Link>
+          </li>
+          <li>
+              <Link to="/checkout">CHECKOUT</Link>
+          </li>
+          <li>
+              <Link to="/about">ABOUT US</Link>
+          </li>
+        </ul>
+        <img src={navUserIcon} alt="Account Icon" />
+      </nav>
+    </header>
   );
 };
 
