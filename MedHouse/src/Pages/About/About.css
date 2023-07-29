@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --background-color: #ecf5ff;
+  --Headline-color: #00487c;
+  --button-color: #0074b8;
+  --header-font-size: 40px;
+  --text-font-size: ;
+}
+
+/* Adding a page limit to each section */
+.sections {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Inter', sans-serif;
+}
+
+/* The styling for the Mission section */
+
+.mission {
+  padding-top: 12rem;
+  width: 90%;
+  margin: auto;
+}
+.mission h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--Headline-color);
+}
+
+.mission-description {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;    
+    justify-content: space-between;
+}
+
+.mission-description-right {
+    height: 30rem;
+    box-shadow: 10px 10px #ADD8E6;
+    border-radius: 5px;
+}
+
+.mission-description-right img{
+    height: 100%;
+    border-radius: 10px;
+    text-shadow: #00487c;
+}
+
+
+.mission-description-left {
+    width: 30vw;
+    padding-top: 5rem;
+}
+
+.mission-description-left h3 {
+    padding-bottom: 2rem;
+}
+
+.mission-description-left p {
+    font-size: 20px;
+}
+
+.mission-description-left .catchPhrase {
+    font-weight: bolder;
+    padding-top: 5rem;
+}
+
+.mission-description-title {
+    color: var(--Headline-color);
+    font-size: var(--header-font-size);
+}
+
+
+/* Styling for the Stuff section */
+
