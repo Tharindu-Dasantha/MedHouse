@@ -137,11 +137,6 @@ body{
     margin-bottom: 40px;
 }
 
-
-
-
-
-
 .contacts .contact-form {
     width: 70%;
     height: 55vh;
@@ -153,11 +148,7 @@ body{
     /* background-color: #0074B8; */
     }
     
-/* .flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 .contacts .contact-form textarea{
     width:100%;

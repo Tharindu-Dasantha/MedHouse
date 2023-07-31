@@ -1,0 +1,58 @@
+.services-page-container{
+    width: 100%;
+    margin-top: calc(7vh + 87px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.services-page-container .card-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 2vw;
+    margin-bottom: 3vh;
+}
+.services-page-container .page-heading{
+
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+    margin: 25px 0;
+    color: #00487C;
+}
+
+.services-page-container .notice-card .box{
+    width: 200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(126, 134, 158, 0.25);
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+}
+
+.services-page-container .notice-card .box span{
+    font-size: 100px;
+    font-weight: 100;
+    color: rgba(126, 134, 158, 0.388);
+    
+
+}
+
+.services-page-container .notice-card:hover > div{
+
+    transform: scale(0.8);
+    
+}
+
+
+
+
+
+
