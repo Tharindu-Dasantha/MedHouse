@@ -15,7 +15,8 @@
 
 .nav-bar{
 
-    background: #0074B8;
+    background: #0075b8d6;
+    backdrop-filter: blur(4px);
     border-radius: 30px;
     min-width: 1330px;
     min-height: 86px;
@@ -23,9 +24,9 @@
     justify-content: space-between;
     align-items: center;
 
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(120,120,120,1);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(120,120,120,1);
-     box-shadow: 0px 2px 2px 0px rgba(120,120,120,1);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(120, 120, 120, 0.522);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(120, 120, 120, 0.522);
+     box-shadow: 0px 2px 6px 0px rgba(120, 120, 120, 0.522);
 
 }
 .nav-bar ul{
