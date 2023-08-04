@@ -18,7 +18,7 @@ const Mission = () => {
           <p className="catchPhrase">Your Path to Wellness, One Click Away!</p>
         </div>
         <div className="mission-description-right">
-            <img src="../../../../public/Image/Mission.png" alt="" />
+            <img src="/Image/Mission.png" alt="" />
         </div>
       </div>
     </div>
