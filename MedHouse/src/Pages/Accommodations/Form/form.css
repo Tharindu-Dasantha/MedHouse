@@ -72,6 +72,7 @@ body{
     color: #00487C;
     margin-left: 5px;
     font-size: 1.3rem;
+    margin-bottom: 3px;
 }
 
 .accomodation-form form div .radio-group-container{
@@ -130,7 +131,7 @@ body{
     width: 100%;
 }
 .guardian-infor div{
-    margin: 30px 0;
+    margin: 35px 0;
 }
 .guardian-infor div #contactnum{
     width: calc(50% - 10px)
@@ -151,7 +152,7 @@ body{
     /* background-color: #001F3F; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 0.6fr);
     grid-column-gap: 20px;
     /* grid-row-gap: 10px; */
     }
@@ -198,7 +199,7 @@ body{
    height: 50px;
    border-radius: 30px;
    border: none;
-   margin: 1vh 0 3vh;
+   margin: 3vh 0 4vh;
    font-size: 1.3rem;
 
 }
