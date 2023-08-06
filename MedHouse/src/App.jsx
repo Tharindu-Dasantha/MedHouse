@@ -11,6 +11,7 @@ import TemplatePage from "./Pages/TemplatePage";
 
 // subfiles
 import AccommodationForm from "./Pages/Accommodations/Form/Form";
+import SignInUpPage from "./Pages/Sign-in-up/SignInUpPage"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         </Route>
           {/* path to the pages which are subpages and does not use the template */}
           <Route path="/accommodation/form" element={<AccommodationForm />} />
+          <Route path="/login" element={<SignInUpPage />} />
       </Routes>
     </Router>
   );
