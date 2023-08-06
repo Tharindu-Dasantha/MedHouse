@@ -2,7 +2,9 @@
 
 function Facilities() {
   return (
-    <div className="facilities sections">Facilities</div>
+    <div className="facilities sections">
+      <h4>Facilities</h4>
+    </div>
   )
 }
 
