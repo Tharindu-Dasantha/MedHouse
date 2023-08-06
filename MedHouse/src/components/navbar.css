@@ -1,5 +1,5 @@
 :root{
-
+    --navbar-background-color:#0075b8d6;
 }
 
 
@@ -15,7 +15,7 @@
 
 .nav-bar{
 
-    background: #0075b8d6;
+    background: var(--navbar-background-color);
     backdrop-filter: blur(4px);
     border-radius: 30px;
     min-width: 1330px;
@@ -51,6 +51,7 @@
     text-decoration: none;
     margin: 0 18px;
     font-size: 25px;
+    transition: 0.3s ease;
 
 }
 .nav-bar img{
@@ -59,7 +60,10 @@
 
 .nav-bar li a:hover{
     
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #95eefa;
+    transform: scale(1.03);
+    
 } 
 
 
