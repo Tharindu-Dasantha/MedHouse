@@ -98,7 +98,7 @@ body{
     background-color: #abd2f4;
 }
 .accomodation-form form div .radio-group-container input[type="radio"]:checked ~ label{
-    background-color: #93c6f2;
+    background-color: #7ec3ff;
 }
 
 .accomodation-form form .personal-info {
@@ -107,7 +107,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr) 2fr repeat(3, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 15px;
     grid-row-gap: 10px;
     }
 

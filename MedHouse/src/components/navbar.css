@@ -51,6 +51,7 @@
     text-decoration: none;
     margin: 0 18px;
     font-size: 25px;
+    transition: 0.3s ease;
 
 }
 .nav-bar img{
@@ -59,7 +60,10 @@
 
 .nav-bar li a:hover{
     
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #95eefa;
+    transform: scale(1.03);
+    
 } 
 
 
