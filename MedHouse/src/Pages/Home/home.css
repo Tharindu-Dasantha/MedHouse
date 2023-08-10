@@ -139,22 +139,22 @@ body {
 
 .detail_box-text_spaces {
   text-align: center;
-    padding-top: 0.2rem;
+  padding-top: 0.2rem;
 }
 
 .detail_box-text_facilities {
- padding-top: 0.5rem;   
+  padding-top: 0.5rem;
 }
 
 .detail_box-text_title {
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 0.3rem;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
 }
 
-.detail_box-text_things ul{
-    list-style-type: none;
-    text-align: center;
+.detail_box-text_things ul {
+  list-style-type: none;
+  text-align: center;
 }
 
 .buttons {
@@ -169,7 +169,7 @@ body {
   cursor: pointer;
 }
 
-.button a{
+.button a {
   color: #f6fcff;
   text-decoration: none;
 }
@@ -183,12 +183,59 @@ body {
 
 /* Facilities section */
 
+.facilities {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.facilities h4 {
+  font-size: 50px;
+  text-align: center;
+  color: var(--heading-color);
+  padding-bottom: 3rem;
+}
+
+.facilities img {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+.facilities .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.facilities .Facility-text {
+  margin: auto;
+}
+
+.facilities .cards h6 {
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  color: #0074b8;
+}
+
+.facilities .cards .card {
+  display: flex;
+  flex-direction: column;
+  border:#0074b8 solid 1px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
 /* Contact us section */
 .contacts {
   /* background-color: rgba(255, 0, 0, 0.263); */
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .contacts .back-img {
@@ -248,4 +295,10 @@ body {
 }
 .message {
   grid-area: 3 / 1 / 4 / 3;
+}
+
+input[type=submit] {
+  margin: 5px 15vw;
+  margin-top: 50px;
+  cursor: pointer;
 }

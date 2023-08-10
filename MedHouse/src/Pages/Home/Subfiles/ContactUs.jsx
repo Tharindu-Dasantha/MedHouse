@@ -33,7 +33,7 @@ function ContactUs() {
           <textarea name="message" id="message" placeholder="Message"></textarea> 
         </div>
         
-
+      <input type="submit" value="Submit" />
       </form>
     </div>
   )

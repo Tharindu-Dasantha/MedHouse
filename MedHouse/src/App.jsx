@@ -11,7 +11,15 @@ import TemplatePage from "./Pages/TemplatePage";
 
 // subfiles
 import AccommodationForm from "./Pages/Accommodations/Form/Form";
-import SignInUpPage from "./Pages/Sign-in-up/SignInUpPage"
+import SignInUpPage from "./Pages/Sign-in-up/SignInUpPage";
+import Inquire from "./Pages/Accommodations/DetailPage/Inquire";
+
+// Sub forms
+import Cleaning from "./Pages/ServicesPage/Forms/Cleaning";
+import Medical from "./Pages/ServicesPage/Forms/Medical";
+import Clearance from "./Pages/ServicesPage/Forms/Clearance";
+import Mentoring from "./Pages/ServicesPage/Forms/Mentoring";
+import Leave from "./Pages/ServicesPage/Forms/Leave";
 
 function App() {
   return (
@@ -23,11 +31,17 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/accommodation" element={<Accommodation />} />
-          
         </Route>
-          {/* path to the pages which are subpages and does not use the template */}
-          <Route path="/accommodation/form" element={<AccommodationForm />} />
-          <Route path="/login" element={<SignInUpPage />} />
+        {/* path to the pages which are subpages and does not use the template */}
+        <Route path="/accommodation/form" element={<AccommodationForm />} />
+        <Route path="/accommodation/inquire" element={<Inquire />} />
+        <Route path="/login" element={<SignInUpPage />} />
+        {/* Path to all the service forms */}
+        <Route path="/services/Cleaning"  element={<Cleaning/>}/>
+        <Route path="/services/Medical" element={<Medical />}/>
+        <Route path="/services/Clearance" element={<Clearance />}/>
+        <Route path="/services/Mentoring" element={<Mentoring />} />
+        <Route path="/services/Leave" element={<Leave />}/>
       </Routes>
     </Router>
   );

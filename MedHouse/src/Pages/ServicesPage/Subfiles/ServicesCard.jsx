@@ -8,7 +8,7 @@ function ServicesCard({imgSrc, service, details, link}){
         <img src={imgSrc} alt="" />
         <h2>{service}</h2>
         <p>{details}</p>
-        <a href={link}>Learn More <span className ="material-icons-outlined">arrow_forward</span></a>
+        <a href={link}>Click Me <span className ="material-icons-outlined">arrow_forward</span></a>
     </div>
   )
 }
