@@ -56,7 +56,7 @@
     padding-bottom: 2rem;
 }
 
-form {
+.Cleaning form {
     display: flex;
     flex-direction: column;
     width: 40vw;
@@ -65,12 +65,12 @@ form {
     
 }
 
-form label {
+.Cleaning form label {
     font-weight: 400;
 }
 
 
-form input, select, textarea {
+.Cleaning form input, select, textarea {
     width: 40vw;
     height: 2.5rem;
     border-radius: 10px;
@@ -78,22 +78,22 @@ form input, select, textarea {
     margin-top: 0.5rem;
 }
 
-form input[type=datetime-local] {
+.Cleaning form input[type=datetime-local] {
     width: 15vw;
     display: flex;
     padding: 5px 10px;
 }
 
-form input[type=radio] {
+.Cleaning form input[type=radio] {
     width: 20px;
     display: none;
 }
 
-form input[type=checkbox] {
+.Cleaning form input[type=checkbox] {
     width: 20px;
 }
 
-div .radio label {
+.Cleaning div .radio label {
     background-color: aqua;
     width: fit-content;
     padding: 10px 20px;
@@ -102,15 +102,23 @@ div .radio label {
     cursor: pointer;
 }
 
-div .radio {
+.Cleaning div .radio {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.checkboxitem {
+.Cleaning .checkboxitem {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 20px;
+}
+
+.Cleaning input[type=submit] {
+  position: relative;
+  width: 60%;
+  height: 50px;
+  right: 5rem;
+  margin-bottom: 50px;
 }
