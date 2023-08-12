@@ -13,6 +13,14 @@ function Signup({setSignin}) {
                 <label htmlFor="sign-up-email">Email</label>
                 <input type="email" name="sign-up-email" id="sign-up-email" placeholder="email@example.com" required/>
             </div>
+            <div className="sign-up-gender">
+              <label htmlFor="sign-up-gender">Gender</label>
+              <select name="sign-up-gender" id="sign-up-gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+                        </div>
             <div className="sign-up-pasword">
                 <label htmlFor="sign-up-password">Password</label>
                 <input type="password" name="sign-up-password" id="sign-up-password" placeholder=" ••••••••••" required/>

@@ -36,8 +36,11 @@
     flex-direction: column;
     margin: 10px 0;
 }
+.sign-in-up-page-container .sign-main-container div select{
+    width:249px;
+}
 
-.sign-in-up-page-container .sign-main-container div input{
+.sign-in-up-page-container .sign-main-container div input, select{
     border: none;
     height: 40px;
     /* object-fit:scale-down; */
