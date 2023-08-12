@@ -16,9 +16,9 @@ function Signup({setSignin}) {
             <div className="sign-up-gender">
               <label htmlFor="sign-up-gender">Gender</label>
               <select name="sign-up-gender" id="sign-up-gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
+                <option value="Boys">Male</option>
+                <option value="Girls">Female</option>
+                
               </select>
                         </div>
             <div className="sign-up-pasword">
