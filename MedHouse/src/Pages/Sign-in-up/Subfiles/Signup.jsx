@@ -24,7 +24,7 @@ function Signup({setSignin}) {
 
             <button type="submit">Sign up</button>
       </form>
-      <p>Have an account? <span onClick={()=>{setSignin(prev=>!prev)}}>Sign in</span></p>
+      <p>Have an account? <span onClick={()=>{setSignin(()=>"signin")}}>Sign in</span></p>
 
     </div>
   )

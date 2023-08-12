@@ -17,7 +17,8 @@ function Signin({setSignin}) {
 
         <button type="submit">Login</button>
       </form>
-      <p>Don't have an account? <span onClick={()=>{setSignin(prev => !prev)}}>Sign up</span></p>
+      <p>Don't have an account? <span onClick={()=>{setSignin(() => "signup")}}>Sign up</span></p>
+      <p>Are you an admin? <span onClick={()=>{setSignin(() => "admin")}}>Login</span></p>
 
     </div>
   )

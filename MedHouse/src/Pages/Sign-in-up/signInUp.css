@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 15px 15px 20px 15px;
     border-radius: 20px;
     color: #001F3F;
     
@@ -66,7 +66,7 @@
 }
 
 .sign-in-up-page-container .sign-main-container p{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: rgb(55, 55, 55);
 }
 
