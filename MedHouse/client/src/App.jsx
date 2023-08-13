@@ -20,14 +20,17 @@ import Medical from "./Pages/ServicesPage/Forms/Medical";
 import Clearance from "./Pages/ServicesPage/Forms/Clearance";
 import Mentoring from "./Pages/ServicesPage/Forms/Mentoring";
 import Leave from "./Pages/ServicesPage/Forms/Leave";
+import { useState } from "react";
 
 function App() {
+  const [loginState, setLoginState] = useState(false);
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<TemplatePage />}>
           {/* All the basic Routes go here */}
-          <Route index element={<Home />} />
+          <Route index element={<Home loginState={loginState} />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/accommodation" element={<Accommodation />} />
@@ -35,7 +38,7 @@ function App() {
         {/* path to the pages which are subpages and does not use the template */}
         <Route path="/accommodation/form" element={<AccommodationForm />} />
         <Route path="/accommodation/inquire" element={<Inquire />} />
-        <Route path="/login" element={<SignInUpPage />} />
+        <Route path="/login" element={<SignInUpPage setLoginState={setLoginState}/>} />
         {/* Path to all the service forms */}
         <Route path="/services/Cleaning"  element={<Cleaning/>}/>
         <Route path="/services/Medical" element={<Medical />}/>

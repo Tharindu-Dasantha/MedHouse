@@ -1,7 +1,7 @@
 import {  useState } from "react";
 import "../signInUp.css";
 // import SignInUpPage from "../SignInUpPage";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 function Signup({setSignin}) {
@@ -10,7 +10,7 @@ function Signup({setSignin}) {
   const [gender, setGender] = useState("Boys");
   const [password, setPassword] = useState("");
   const [conPassword, setConPassword] = useState("");
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   async function signUpUser(e) {
     e.preventDefault()
