@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import "../signInUp.css";
+// import SignInUpPage from "../SignInUpPage";
+import { useNavigate } from "react-router-dom";
 
 
 function Signup({setSignin}) {
@@ -8,26 +10,39 @@ function Signup({setSignin}) {
   const [gender, setGender] = useState("Boys");
   const [password, setPassword] = useState("");
   const [conPassword, setConPassword] = useState("");
+  const navigate = useNavigate();
 
   async function signUpUser(e) {
     e.preventDefault()
-    fetch('http://localhost:5000/api/signup',{
-      method:'post',
-      headers:{
-        'Content-Type' : 'application/json'
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        gender,
-        password,
+
+    if(password===conPassword){
+      fetch('http://localhost:5000/api/signup',{
+        method:'post',
+        headers:{
+          'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          gender,
+          password,
+        })
+      }).then(response=>response.json())
+      .then((data)=>{
+        if(data.status){ 
+          // navigate('/home')
+          window.location.reload(true)
+        }
+        console.log(data.status)
+
+      }).catch((err)=>{
+        console.log('rejected',err)
+        alert("Network error.")
       })
-    }).then(response=>response.json())
-    .then((data)=>{
-      console.log(data)
-    }).catch((err)=>{
-      console.log('rejected',err)
-    })
+
+    }else{
+      alert("Confirm password and Password does not match!")
+    }
   }
   
 
