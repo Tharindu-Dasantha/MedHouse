@@ -7,7 +7,7 @@ import "../signInUp.css";
 function Signup({setSignin}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [gender, setGender] = useState("Boys");
+  const [gender, setGender] = useState("Male");
   const [password, setPassword] = useState("");
   const [conPassword, setConPassword] = useState("");
   // const navigate = useNavigate();
@@ -76,8 +76,8 @@ function Signup({setSignin}) {
             <div className="sign-up-gender">
               <label htmlFor="sign-up-gender">Gender</label>
               <select name="sign-up-gender" id="sign-up-gender" onChange={(e) => setGender(e.target.value)} value={gender}>
-                <option value="Boys">Boys</option>
-                <option value="Girls">Girls</option>
+                <option value="Male">Boy</option>
+                <option value="Female">Girl</option>
                 
               </select>
                         </div>

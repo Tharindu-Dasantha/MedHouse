@@ -25,7 +25,7 @@ app.post('/api/signup', async (req, res)=>{
         res.json({ status:true })// if signup is valid respond must be true if not then it must be false
 
     }catch{
-        res.json({status:'error'})
+        res.json({status:false})
     }
     
 })
@@ -42,7 +42,7 @@ app.post('/api/signin', async (req, res)=>{
         res.json({ status:true })// if signup is valid respond must be true if not then it must be false
 
     }catch{
-        res.json({status:'error'})
+        res.json({status:false})
     }
 
 })
