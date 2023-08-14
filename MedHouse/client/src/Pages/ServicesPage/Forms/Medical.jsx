@@ -14,7 +14,7 @@ function Medical() {
         backend completed
       </div>
       <p className="note">
-        <strong>Notes-</strong>
+        <strong>Notes-</strong> <br />
         if you feel sick do not use any kind of medicine without doctor
         reference, You are still MBBS students. Please reach your hostel medical
         service.
@@ -65,12 +65,14 @@ function Medical() {
           <option value="5">more than 5 days</option>
         </select>
         <label htmlFor="makeAppointment">Do You want to make doctor appointment</label>
+        <div className="radiobtn">
         <input type="radio" name="appointment" id="appointment_yes" />
         <label htmlFor="appointment_yes">Yes</label>
         <input type="radio" name="appointment" id="appointment_no" />
         <label htmlFor="appointment_no">No</label>
+        </div>
         <label htmlFor="TimeAppointment">Time</label>
-        <input type="datetime" name="TimeAppointment" id="TimeAppointment" />
+        <input type="datetime-local" name="TimeAppointment" id="TimeAppointment" />
         <input type="submit" value="done" />
       </form>
     </div>

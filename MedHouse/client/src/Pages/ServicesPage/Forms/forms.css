@@ -122,3 +122,113 @@
   right: 5rem;
   margin-bottom: 50px;
 }
+
+.medical .time_table{
+  width: 70vw;
+  margin: auto;
+}
+
+.medical .note {
+  width: 60vw;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 18px;
+}
+
+.medical form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.medical label {
+  font-size: 20px;
+
+}
+
+.medical input {
+  height: 2rem;
+  border-radius: 10px;
+  width: 45vw;
+  margin: 10px 15px;
+}
+
+.medical select{
+  background-color: white;
+  border: 2px solid black;
+  width: 35vw;
+  margin: 15px 10px;
+  margin-left: 15px;
+}
+
+.medical input[type=radio] {
+  display: none;
+}
+
+.medical .radiobtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.medical .radiobtn label {
+  background-color: aqua;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.medical input[type=datetime-local] {
+  height: 2.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.medical input[type=submit] {
+  width: 20vw;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  height: 2.5rem;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.clearance form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.clearance input {
+  width: 45vw;
+  height: 2rem;
+  border-radius: 10px;
+  margin: 10px 15px;
+}
+
+.clearance input[type=date] {
+  height: 2.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clearance textarea {
+  margin: 10px 15px;
+  height: 10rem;
+}
+
+.clearance input[type=submit] {
+  width: 20vw;
+  margin: auto;
+  height: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
