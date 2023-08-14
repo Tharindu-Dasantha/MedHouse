@@ -75,10 +75,13 @@ function Cleaning() {
         <div>
           <p>Are you available in the room area while cleaning period</p>
           <div className="radio">
+          
             <input type="radio" name="available" id="radio_yes" />
             <label htmlFor="radio_yes">Yes</label>
+            
             <input type="radio" name="available" id="radio_no" />
             <label htmlFor="radio_no">No</label>
+            
           </div>
         </div>
         <div>
