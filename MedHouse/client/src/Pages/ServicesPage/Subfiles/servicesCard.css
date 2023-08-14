@@ -24,11 +24,14 @@
 }
 
 .service-card img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    aspect-ratio: 1;
     margin-top: 10px;
     background: #D9D9D9;
-    border-radius: 20px;    
+    border-radius: 50%;
+    
+
 }
 
 .service-card h2{
