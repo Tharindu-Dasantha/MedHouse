@@ -56,7 +56,9 @@
     margin-bottom: 10vh;
     margin-top: 5vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .services-page-container .googlemap-location iframe{
@@ -65,6 +67,29 @@
     -moz-box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.75);
 }
+
+.services-page-container .googlemap-location .sites{
+    
+    margin-top: 10px;
+}
+
+.services-page-container .googlemap-location .sites button{
+    margin:0 10px;
+    width: 120px;
+    height: 40px;
+    background-color: #0073c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.services-page-container .googlemap-location .sites button:hover{
+    background-color: #00487C;
+}
+
+
 
 
 
