@@ -22,6 +22,9 @@ import Mentoring from "./Pages/ServicesPage/Forms/Mentoring";
 import Leave from "./Pages/ServicesPage/Forms/Leave";
 import { useState } from "react";
 
+// temp files
+import Admin from "./Pages/Users/Admin";
+
 function App() {
   const [loginState, setLoginState] = useState(false);
 
@@ -38,13 +41,18 @@ function App() {
         {/* path to the pages which are subpages and does not use the template */}
         <Route path="/accommodation/form" element={<AccommodationForm />} />
         <Route path="/accommodation/inquire" element={<Inquire />} />
-        <Route path="/login" element={<SignInUpPage setLoginState={setLoginState}/>} />
+        <Route
+          path="/login"
+          element={<SignInUpPage setLoginState={setLoginState} />}
+        />
         {/* Path to all the service forms */}
-        <Route path="/services/Cleaning"  element={<Cleaning/>}/>
-        <Route path="/services/Medical" element={<Medical />}/>
-        <Route path="/services/Clearance" element={<Clearance />}/>
+        <Route path="/services/Cleaning" element={<Cleaning />} />
+        <Route path="/services/Medical" element={<Medical />} />
+        <Route path="/services/Clearance" element={<Clearance />} />
         <Route path="/services/Mentoring" element={<Mentoring />} />
-        <Route path="/services/Leave" element={<Leave />}/>
+        <Route path="/services/Leave" element={<Leave />} />
+        {/* temparary paths to admin board */}
+        <Route path="/adminpage" element={<Admin />} />
       </Routes>
     </Router>
   );

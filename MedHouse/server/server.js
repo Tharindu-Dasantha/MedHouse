@@ -1,54 +1,13 @@
 import express from "express";
-import cors from 'cors';
-import mongoose from 'mongoose';
-// import Student from "./models/students.models"
+import cors from "cors";
+import facilities from "./api/facilities.route.js";
 
-const app = express()
-app.use(express.json())
-app.use(cors())
+const app = express();
 
-// mongoose.connect('')
+app.use(cors());
+app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("hi");
-});
+app.use("/api/v1/admin", facilities);
+app.use("*", (req, res) => res.status(404).json({ error: "not found" }));
 
-//for signup process
-
-app.post('/api/signup', async (req, res)=>{
-    console.log(req.body)
-    try{
-
-        // mongodb validations hear
-
-
-        res.json({ status:true })// if signup is valid respond must be true if not then it must be false
-
-    }catch{
-        res.json({status:false})
-    }
-    
-})
-
-
-app.post('/api/signin', async (req, res)=>{
-    console.log(req.body)
-
-    try{
-
-        // mongodb validations hear
-
-
-        res.json({ status:true })// if signup is valid respond must be true if not then it must be false
-
-    }catch{
-        res.json({status:false})
-    }
-
-})
-
-
-
-app.listen(5000, ()=>{
-    console.log("server running on http://localhost:5000/")
-})
+export default app;
