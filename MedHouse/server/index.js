@@ -1,47 +1,52 @@
-import app from "./server.js";
+import express from "express";
 import mongodb from "mongodb";
 import dotenv from "dotenv";
-// all the daos
-import FacilitiesDAO from "./dao/facilitiesDAO.js";
-import ServicesDAO from "./dao/servicesDAO.js";
-import NoticeboardDAO from "./dao/noticeboardDAO.js";
-import StuffDAO from "./dao/stuffDAO.js";
-import UsersDAO from "./dao/usersDAO.js";
+// import AdminsDAO from "./dao/adminDAO.js"
+// import ReviewsDAO from "./dao/reviewsDAO.js"
+
+const app = express();
 
 dotenv.config();
 const MongoClient = mongodb.MongoClient;
 
 const port = process.env.PORT || 8000;
 
-const connectDB = async (uri, dao) => {
-  const client = new MongoClient(uri, {
-    wtimeoutMS: 2500,
-    useNewUrlParser: true,
-  });
-  try {
-    await client.connect();
-    // all the daos
-    await dao.injectDB(client);
-  } catch (e) {
-    console.error(e.stack);
+let admins;
+
+MongoClient.connect(process.env.FACILITIES_DB_URI, {
+  maxPoolSize: 50,
+  wtimeoutMS: 2500,
+})
+  .catch((err) => {
+    console.error(err.stack);
     process.exit(1);
-  }
-  return client;
-};
-
-// connect to all the databases
-const facilitesDB = connectDB(process.env.FACILITIES_DB_URI, FacilitiesDAO);
-const serviecesDB = connectDB(process.env.SERVICES_DB_URI, ServicesDAO);
-const noticeboardDB = connectDB(process.env.NOTICEBOARD_DB_URI, NoticeboardDAO);
-const stuffDB = connectDB(process.env.STUFF_DB_URI, StuffDAO);
-const usrsDB = connectDB(process.env.USRS_DB_URI, UsersDAO);
-
-Promise.all([facilitesDB, serviecesDB, noticeboardDB, stuffDB, usrsDB])
-  .then(() => {
-    app.listen(port, () => {
-      console.log(`listening on ${port}`);
-    });
   })
-  .catch((e) => {
-    console.error(`Failed to connect to database. \n${e}`);
+  .then(async (client) => {
+    // await AdminsDAO.injectDB(client)
+    if (admins) {
+      return;
+    }
+    try {
+      admins = await client
+        .db(process.env.FACILITIES_NS)
+        .collection("facility");
+    } catch (e) {
+      console.error(
+        `Unable to establish a collection handle in adminDAO: ${e}`
+      );
+    }
+
+    app.get("/api/facilities", async (req, res) => {
+      try {
+        const facilities = await admins.find({}).toArray();
+        res.json(facilities);
+      } catch (err) {
+        res.status(500).send(err);
+      }
+    });
+
+    // await ReviewsDAO.injectDB(client)
+    app.listen(port, () => {
+      console.log(`listening on port ${port}`);
+    });
   });
